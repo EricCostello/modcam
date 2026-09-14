@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ModCam</title>
+<meta name="description" content="A RAW camera for iPhone. Your iPhone's sensor, before anyone has an opinion about it.">
+<style>
+  :root {
+    --bg: #ffffff; --fg: #16181d; --muted: #5b6472;
+    --rule: #e3e6ec; --accent: #1a5fd0; --card: #f6f7f9;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #111317; --fg: #e9ecf1; --muted: #a0a8b6;
+            --rule: #262b33; --accent: #78a9ff; --card: #191d23; }
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0; background: var(--bg); color: var(--fg);
+    font: 17px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    padding: 0 20px 64px;
+  }
+  .wrap { max-width: 44rem; margin: 0 auto; }
+  header { padding: 56px 0 8px; }
+  h1 { font-size: 2.1rem; line-height: 1.15; margin: 0 0 .4rem; letter-spacing: -.02em; }
+  .pitch { font-size: 1.22rem; color: var(--fg); margin: 0 0 2rem; font-weight: 500; }
+  h2 { font-size: 1.12rem; margin: 2.4rem 0 .6rem; letter-spacing: -.01em; }
+  p, li { color: var(--fg); }
+  .muted { color: var(--muted); }
+  ul { padding-left: 1.15rem; margin: .5rem 0; }
+  li { margin: .3rem 0; }
+  a { color: var(--accent); }
+  .card {
+    background: var(--card); border: 1px solid var(--rule); border-radius: 12px;
+    padding: 16px 18px; margin: 1rem 0;
+  }
+  .cta {
+    display: inline-block; margin: .6rem 0 0; padding: 11px 18px;
+    border: 1px solid var(--rule); border-radius: 10px;
+    background: var(--card); color: var(--accent);
+    text-decoration: none; font-weight: 600;
+  }
+  footer {
+    margin-top: 3.5rem; padding-top: 1.2rem; border-top: 1px solid var(--rule);
+    font-size: .93rem; color: var(--muted);
+  }
+  footer a { margin-right: 1rem; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <h1>ModCam</h1>
+  <p class="pitch">Your iPhone's sensor, before anyone has an opinion about it.</p>
+</header>
+
+<h2>What it is</h2>
+<p>
+  ModCam is a RAW camera for iPhone. It writes the sensor data your phone actually
+  recorded to a DNG file and stops there &mdash; no smoothing, no sharpening, no scene
+  detection, nothing added on the way out.
+</p>
+<p>
+  You get direct manual control of exposure, shutter, ISO, focus, and white balance,
+  and a viewfinder built to tell you the truth about what the sensor is seeing rather
+  than to flatter it. Captures go straight to your own photo library.
+</p>
+
+<h2>Requirements</h2>
+<div class="card">
+  <p style="margin:0">iPhone 17 Pro / 17 Pro Max / 18 Pro / 18 Pro Max</p>
+  <p class="muted" style="margin:.4rem 0 0; font-size:.95rem">
+    ModCam needs the sensor and processing hardware on these models. It is an
+    iPhone app and does not run on iPad.
+  </p>
+</div>
+
+<h2>Get it</h2>
+<p><a class="cta" href="#">Download on the App Store</a></p>
+<p class="muted" style="font-size:.95rem">App Store link coming at launch.</p>
+
+<footer>
+  <a href="privacy.html">Privacy</a>
+  <a href="support.html">Support</a>
+  <a href="mailto:ecostello2005@gmail.com">ecostello2005@gmail.com</a>
+</footer>
+
+</div>
+</body>
+</html>

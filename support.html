@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ModCam &mdash; Support</title>
+<meta name="description" content="Support, requirements, and answers to common ModCam questions.">
+<style>
+  :root {
+    --bg: #ffffff; --fg: #16181d; --muted: #5b6472;
+    --rule: #e3e6ec; --accent: #1a5fd0; --card: #f6f7f9;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #111317; --fg: #e9ecf1; --muted: #a0a8b6;
+            --rule: #262b33; --accent: #78a9ff; --card: #191d23; }
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0; background: var(--bg); color: var(--fg);
+    font: 17px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    padding: 0 20px 64px;
+  }
+  .wrap { max-width: 44rem; margin: 0 auto; }
+  header { padding: 48px 0 4px; }
+  h1 { font-size: 1.85rem; line-height: 1.2; margin: 0 0 1.4rem; letter-spacing: -.02em; }
+  h2 { font-size: 1.1rem; margin: 2.2rem 0 .5rem; letter-spacing: -.01em; }
+  h3 { font-size: 1rem; margin: 1.5rem 0 .3rem; }
+  a { color: var(--accent); }
+  .muted { color: var(--muted); }
+  ul { padding-left: 1.15rem; margin: .5rem 0; }
+  li { margin: .3rem 0; }
+  .card {
+    background: var(--card); border: 1px solid var(--rule); border-radius: 12px;
+    padding: 16px 18px; margin: 1.2rem 0;
+  }
+  .card p { margin: 0; }
+  .card p + p { margin-top: .5rem; }
+  footer {
+    margin-top: 3.5rem; padding-top: 1.2rem; border-top: 1px solid var(--rule);
+    font-size: .93rem; color: var(--muted);
+  }
+  footer a { margin-right: 1rem; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <h1>ModCam Support</h1>
+</header>
+
+<div class="card">
+  <p><strong>Email:</strong> <a href="mailto:ecostello2005@gmail.com">ecostello2005@gmail.com</a></p>
+  <p class="muted">Tell me your iPhone model, what you were doing, and what happened. Screenshots help.</p>
+</div>
+
+<h2>Requirements</h2>
+<p>iPhone 17 Pro / 17 Pro Max / 18 Pro / 18 Pro Max</p>
+<p class="muted" style="font-size:.95rem">
+  ModCam is an iPhone app and does not run on iPad. Older iPhones lack the sensor and
+  processing hardware it depends on.
+</p>
+
+<h2>Frequently asked</h2>
+
+<h3>ModCam says the camera wasn't found.</h3>
+<p>Tap <strong>Try Again</strong>. If that doesn't do it, leave ModCam and reopen it. This
+usually means iOS handed the camera to something else &mdash; another camera app, a video
+call, or the Control Center &mdash; and hasn't given it back yet. Closing and reopening
+ModCam reclaims it. If it persists, restart the phone, and check that ModCam has camera
+access in Settings &rarr; Privacy &amp; Security &rarr; Camera.</p>
+
+<h3>My RAW files look different in Photos than they did in the viewfinder.</h3>
+<p>That is expected, and it is the point. ModCam saves the sensor data as it was recorded.
+When you open that DNG, Photos develops it with its own rendering &mdash; its own tone
+curve, colour, and noise handling &mdash; which is not the same rendering the ModCam
+viewfinder uses. Different developer, different picture, same file underneath. Open the
+same DNG in Lightroom or Capture One and you will get a third look. None of them is wrong;
+they are interpretations of one unprocessed capture.</p>
+
+<h3>The ISO or shutter speed reported doesn't exactly match what I dialled in.</h3>
+<p>The sensor only accepts certain discrete values. When you set a value between two of
+them, the hardware snaps to the nearest one it can actually do, so the number that comes
+back can be off by a few units from the number on the dial. ModCam reports what the sensor
+really used rather than what you asked for, which is why you see the difference. It is
+sensor quantization, not a bug, and the effect on the exposure is negligible.</p>
+
+<h3>Where do my photos go?</h3>
+<p>Straight into your own photo library on the device, as soon as they are captured.
+ModCam has no cloud, no account, and no network access of any kind &mdash; see the
+<a href="privacy.html">privacy policy</a>.</p>
+
+<h3>Why does the gallery show coordinates instead of a street address?</h3>
+<p>Because turning a coordinate into an address means asking a server, and ModCam does not
+talk to servers. Tapping the location opens the Maps app of your choice &mdash; Apple Maps
+or Google Maps, set in Settings &rarr; Maps &mdash; at that coordinate, and that app takes
+it from there.</p>
+
+<h3>I tapped "Don't Allow" on the camera prompt and now the screen is black.</h3>
+<p>ModCam cannot show a viewfinder without camera access, and iOS only asks once. The
+error alert has an <strong>Open Settings</strong> button that takes you straight there;
+turn Camera on for ModCam and reopen the app.</p>
+
+<h3>Can I get a feature added, or report a bug?</h3>
+<p>Yes &mdash; email <a href="mailto:ecostello2005@gmail.com">ecostello2005@gmail.com</a>.
+Bug reports with the model, the iOS version, and the steps that caused it are the most
+useful.</p>
+
+<footer>
+  <a href="index.html">ModCam</a>
+  <a href="privacy.html">Privacy</a>
+</footer>
+
+</div>
+</body>
+</html>
